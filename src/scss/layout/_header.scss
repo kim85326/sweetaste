@@ -1,0 +1,20 @@
+.header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: $color-primary;
+    .logo {
+        width: 219.49px;
+        height: 100%;
+    }
+    .nav {
+        display: flex;
+    }
+    .nav-item {
+        font-size: 16px;
+        font-weight: 900;
+        margin-right: 60px;
+    }
+}
