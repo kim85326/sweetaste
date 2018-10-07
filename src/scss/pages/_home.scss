@@ -1,0 +1,143 @@
+@media (min-width: 576px) {
+    .category-list {
+        margin-top: -100px;
+        margin-bottom: 80px;
+    }
+}
+
+.category-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 256px;
+    &:not(:first-child) {
+        border-left: 1px solid white;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:hover,
+    &.active {
+        .category-text {
+            color: $primary;
+        }
+        .category-img-cover {
+            background-color: rgba($secondary, .8);
+        }
+        .category-link {
+            background-color: rgba($secondary, .8);
+            color: $primary;
+        }
+    }
+    @media (max-width: 575px) {
+        height: 180px;
+        .category-text {
+            font-size: 20px;
+        }
+    }
+}
+
+.category-text {
+    position: relative;
+    z-index: 3;
+    font-size: 24px;
+    letter-spacing: 10px;
+    writing-mode: vertical-lr;
+    color: white;
+    font-weight: bold;
+}
+
+.category-img-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba($primary, .8);
+}
+
+.category-img {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+}
+
+.introduce-item {
+    background-color: $light-green;
+    @media (min-width: 768px) {
+        margin-bottom: 105px;
+    }
+}
+
+.introduce-img {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    max-width: 460px;
+    min-height: 250px;
+    @media (max-width: 767px) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.introduce-text {
+    max-height: 420px;
+    color: $introduce-text-color;
+    line-height: 2.5;
+    padding: 30px;
+    p:not(:first-child) {
+        margin-bottom: 32px;
+    }
+    @media (min-width: 768px) {
+        padding: 70px 0;
+        writing-mode: vertical-rl;
+        p {
+            margin-bottom: 0;
+            &:not(:first-child) {
+                margin-right: 32px;
+            }
+        }
+    }
+}
+
+.introduce-slogan-sm {
+    background-color: white;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.introduce-slogan-img {
+    display: block;
+    margin: 0 auto;
+    width: 89px;
+    @media (max-width: 768px) {
+        width: 196px;
+    }
+}
+
+@media (min-width: 768px) {
+    .introduce-slogan-end {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-out-of-box {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+}

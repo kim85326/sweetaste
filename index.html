@@ -7,96 +7,267 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sweetaste</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./public/stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/all.min.css">
 </head>
 
 <body>
     <div class="header">
-        <div class="logo">
-            <a href="/">
-                <img src="./src/images/logo/logo-all-dark.svg" />
-            </a>
-        </div>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="/">首頁</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">甜點</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">登入</a>
-            </li>
-            <li class="nav-item shopping-cart">
-                <a href="#">
-                    <img src="./src/images/icon/baseline-shopping_cart-24px.svg" />
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer">
-        <div class="footer-top">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
-                <div class="footer-top-content">
-                    <div class="subscribe-label">
-                        <div class="subscribe-logo">
-                            <img src="./src/images/logo/logo-light.svg" />
-                        </div>
-                        <div class="subscribe-text">訂閱你我的甜蜜郵件</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img class="d-none d-md-inline-block" src="./src/images/logo/logo-all-dark.svg" height="40" alt="logo">
+                    <img class="d-inline-block d-md-none" src="./src/images/logo/logotype-sm-dark.svg" height="18" width="115" alt="logo">
+                </a>
+                <a class="shopping-cart order-lg-2" href="/cart.html">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+                <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/product.html">甜點</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login.html">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="banner" style="background-image: url(./src/images/desserts/annie-spratt-133872-unsplash.jpg)"></div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row category-list">
+                        <a class="col-4 category-item" href="#">
+                            <div class="category-text">本日精選</div>
+                            <div class="category-img-cover"></div>
+                            <div class="category-img" style="background-image: url(./src/images/desserts/brooke-lark-230642-unsplash.jpg)"></div>
+                        </a>
+                        <a class="col-4 category-item" href="#">
+                            <div class="category-text">人氣推薦</div>
+                            <div class="category-img-cover"></div>
+                            <div class="category-img" style="background-image: url(./src/images/desserts/whitney-wright-356670-unsplash.jpg)"></div>
+                        </a>
+                        <a class="col-4 category-item" href="#">
+                            <div class="category-text">新品上市</div>
+                            <div class="category-img-cover"></div>
+                            <div class="category-img" style="background-image: url(./src/images/desserts/food-photographer-jennifer-pallian-306919-unsplash.jpg)"></div>
+                        </a>
                     </div>
-                    <form action="" class="subscribe-form">
-                        <div class="subscribe-input-group">
-                            <div class="subscribe-icon">
-                                <img src="./src/images/icon/round-email-24px.svg" />
-                            </div>
-                            <div class="subscribe-input">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="subscribe-button">
-                            <button class="">
-                                <img src="./src/images/icon/round-arrow_right_alt-24px.svg" />
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
-        <div class="footer-body">
+    </section>
+
+    <section>
+        <div class="introduce-item">
             <div class="container">
-                <div class="footer-body-content">
-                    <div class="company-info">
-                        <div class="company-info-logo">
-                            <img src="./src/images/logo/logotype-lg-dark.svg" />
+                <div class="row">
+                    <div class="col-md-2 order-md-3">
+                        <div class="introduce-slogan-lg d-md-block d-none md-out-of-box text-right">
+                            <img class="introduce-slogan-img" src="./src/images/slogan/lg-為什麼一定要吃甜點.svg" alt="為什麼一定要吃甜點">
                         </div>
-                        <div class="company-info-text">
-                            <div>07-12345678</div>
-                            <div>sweetaste@email.com</div>
-                            <div>800 高雄市新興區幸福路 520 號</div>
+                        <div class="introduce-slogan-sm d-md-none d-block">
+                            <img class="introduce-slogan-img" src="./src/images/slogan/sm-為什麼一定要吃甜點.svg" alt="為什麼一定要吃甜點">
                         </div>
                     </div>
-                    <div class="slogan">
-                        <img src="./src/images/quote/sm-今天是個吃甜點的好日子.svg" alt="">
+                    <div class="col-md-6 order-md-1 md-out-of-box">
+                        <div class="introduce-img" style="background-image: url(./src/images/desserts/le-buzz-576478-unsplash.jpg)">
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-md-2">
+                        <div class="introduce-text">
+                            <p>青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江，古今多少事，都付笑談中。</p>
+                            <p>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduce-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 order-md-3">
+                        <div class="introduce-slogan-lg d-md-block d-none md-out-of-box text-right">
+                            <img class="introduce-slogan-img" src="./src/images/slogan/lg-為什麼選擇了做甜點.svg" alt="為什麼選擇了做甜點">
+                        </div>
+                        <div class="introduce-slogan-sm d-md-none d-block">
+                            <img class="introduce-slogan-img" src="./src/images/slogan/sm-為什麼選擇了做甜點.svg" alt="為什麼選擇了做甜點">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 md-out-of-box">
+                        <div class="introduce-img" style="background-image: url(./src/images/desserts/monika-grabkowska-325047-unsplash.jpg)">
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-md-1 ">
+                        <div class="introduce-text">
+                            <p>青山依舊在，幾度夕陽紅。慣看秋月春一壺濁酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮漁樵江，古今多少事，都付笑談中。</p>
+                            <p>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduce-slogan-end">
+            <div class="introduce-slogan-lg d-md-block d-none md-out-of-box text-right">
+                <img class="introduce-slogan-img" src="./src/images/slogan/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的">
+            </div>
+            <div class="introduce-slogan-sm d-md-none d-block">
+                <img class="introduce-slogan-img" src="./src/images/slogan/sm-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row product-list">
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url(./src/images/desserts/heather-schwartz-493946-unsplash.jpg)">
+                            <div class="product-tag">本日精選</div>
+                            <a class="product-like" href="#">
+                                <!-- <i class="material-icons">
+                                        favorite
+                                    </i> -->
+                                <i class="material-icons">
+                                    favorite_border
+                                </i>
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">
+                                焦糖馬卡龍
+                            </div>
+                            <div class="product-price">
+                                NT$ <span>450</span>
+                            </div>
+                        </div>
+                        <a class="add-cart" href="#">加入購物車</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url(./src/images/desserts/food-photographer-jennifer-pallian-650641-unsplash.jpg)">
+                            <div class="product-tag">本日精選</div>
+                            <a class="product-like" href="#">
+                                <!-- <i class="material-icons">
+                                            favorite
+                                        </i> -->
+                                <i class="material-icons">
+                                    favorite_border
+                                </i>
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">
+                                焦糖馬卡龍
+                            </div>
+                            <div class="product-price">
+                                NT$ <span>450</span>
+                            </div>
+                        </div>
+                        <a class="add-cart" href="#">加入購物車</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url(./src/images/desserts/rezel-apacionado-362238-unsplash.jpg)">
+                            <div class="product-tag">本日精選</div>
+                            <a class="product-like" href="#">
+                                <!-- <i class="material-icons">
+                                                favorite
+                                            </i> -->
+                                <i class="material-icons">
+                                    favorite_border
+                                </i>
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">
+                                焦糖馬卡龍
+                            </div>
+                            <div class="product-price">
+                                NT$ <span>450</span>
+                            </div>
+                        </div>
+                        <a class="add-cart" href="#">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 subscribe-slogan">
+                        <img class="subscribe-logo" src="./src/images/logo/logo-light.svg" />
+                        <div class="subscribe-text">訂閱你我的甜蜜郵件</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="subscribe-form">
+                            <label class="subscribe-label" for="subscribe-input">
+                                <i class="material-icons">email</i>
+                            </label>
+                            <input id="subscribe-input" class="subscribe-input" type="text">
+                            <button class="subscribe-button">
+                                <i class="material-icons">
+                                    arrow_forward
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <img class="footer-logo" src="./src/images/logo/logotype-lg-dark.svg" alt="logo">
+                        <div class="footer-info">
+                            <p>07-12345678</p>
+                            <p>sweetaste@email.com</p>
+                            <p>800 高雄市新興區幸福路 520 號</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-flex justify-content-end">
+                        <img class="footer-slogan" src="./src/images/slogan/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子">
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="footer-bottom-content row">
-                    <ul class="social col-sm-6">
-                        <li>
-                            <a href="#">
-                                <img src="./src/images/icon/ic-line@.svg" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./src/images/icon/ic-facebook.svg" />
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="copyright col-sm-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="d-flex">
+                            <li class="social-item">
+                                <a href="#">
+                                    <img src="./src/images/icon/ic-line@.svg" />
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#">
+                                    <img src="./src/images/icon/ic-facebook.svg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-md-flex justify-content-end">
                         © 2018 Sweetaste* All Rights Reserved
                     </div>
                 </div>
@@ -104,5 +275,6 @@
         </div>
     </div>
 </body>
+<script src="./public/js/all.min.js"></script>
 
 </html>

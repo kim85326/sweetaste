@@ -2,8 +2,12 @@
 @import './base/reset';
 // variables
 @import './helpers/variables';
-// grid system
-@import './layout/grid';
+// bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// component
+@import "./components/subscribe";
+@import "./components/banner";
+@import "./components/product-item";
 // layout
 @import './layout/header';
 @import './layout/footer';

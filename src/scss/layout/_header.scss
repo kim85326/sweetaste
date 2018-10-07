@@ -1,20 +1,54 @@
 .header {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    color: $color-primary;
-    .logo {
-        width: 219.49px;
-        height: 100%;
+    .navbar {
+        padding: 25px 0;
+        @media (max-width: 767px) {
+            padding: 28px 0;
+        }
     }
-    .nav {
+    .navbar-light {
+        .navbar-nav .nav-link {
+            padding-left: 0;
+            padding-right: 0;
+            color: $primary;
+            font-size: 16px;
+            font-weight: 900;
+            &:hover {
+                color: darken($primary, 50%);
+            }
+            @media (min-width: 992px) {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+        .navbar-toggler {
+            color: $primary;
+            border: none;
+            padding: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .navbar-expand-lg>.container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    .shopping-cart {
         display: flex;
+        align-items: center;
+        margin-left: 49px;
+        i {
+            margin: auto 0;
+        }
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
     }
-    .nav-item {
-        font-size: 16px;
-        font-weight: 900;
-        margin-right: 60px;
+    .navbar-brand {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
     }
 }

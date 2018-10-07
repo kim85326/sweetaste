@@ -1,91 +1,30 @@
 .footer {
-    color: $color-primary;
-    background-color: $white;
+    background-color: $light-green;
+    color: $primary;
     .footer-top {
-        background-color: $color-primary;
-    }
-    .footer-top-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 116px;
-        color: white;
-        .subscribe-label {
-            display: flex;
-            align-items: center;
-        }
-        .subscribe-logo {
-            height: 40px;
-            width: 40px;
-        }
-        .subscribe-text {
-            margin-left: 20px;
-            font-size: 24px;
-        }
-        .subscribe-form {
-            display: flex;
-            width: 380px;
-            height: 56px;
-            .subscribe-input-group {
-                flex: 1 1 auto;
-                background-color: $white;
-                display: flex;
-                align-items: center;
-                padding: 16px 20px;
-                input {
-                    background-color: inherit;
-                    border: none;
-                    outline: none;
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-            button {
-                width: 64px;
-                height: 100%;
-                border: none;
-                background-color: $color-secondary;
-                &:focus {
-                    outline: none;
-                }
-                img {
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-        }
-    }
-    .footer-body-content {
-        display: flex;
-        justify-content: space-between;
         padding-top: 30px;
-        .company-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .company-info-logo {
-            width: 170px;
-        }
-        .slogan {
-            width: 60px;
-            height: 220px;
+    }
+    .footer-logo {
+        width: 172px;
+        height: 27px;
+    }
+    @media (max-width: 767px) {
+        .footer-info {
+            margin-top: 48px;
         }
     }
-    .footer-bottom-content {
-        padding-top: 30px;
+    .footer-slogan {
+        display: block;
+        width: 60px;
+        height: 219px;
+    }
+    .footer-bottom {
+        margin-top: 30px;
         padding-bottom: 30px;
-        .social {
-            display: flex;
-            li {
-                margin-right: 8px;
-                width: 32px;
-                height: 32px;
-            }
-        }
-        .copyright {
-            text-align: right;
-        }
+    }
+    .social-item {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
     }
 }
